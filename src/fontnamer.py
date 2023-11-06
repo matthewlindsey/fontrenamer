@@ -1,27 +1,9 @@
 #!/usr/bin/env python3
 
-# ==========================================================================
-# fontname.py
-# Copyright 2019 Christopher Simpkins
-# MIT License
-#
-# Dependencies:
-#   1) Python 3.6+ interpreter
-#   2) fonttools Python library (https://github.com/fonttools/fonttools)
-#         - install with `pip3 install fonttools`
-#
-# Usage:
-#   python3 fontname.py [FONT FAMILY NAME] [FONT PATH 1] <FONT PATH ...>
-#
-# Notes:
-#   Use quotes around font family name arguments that include spaces
-# ===========================================================================
-
 import os
 import sys
 
 from fontTools import ttLib
-
 
 def main(argv):
     # command argument tests

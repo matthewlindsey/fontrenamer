@@ -1,0 +1,29 @@
+[project]
+name = "fontnamer"
+version = "0.0.1"
+description = " Python utility that renames OpenType (.otf) and TrueType (.ttf) fonts using the fonttools library."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT License"}
+authors = [
+  { name="Matthew Lindsey", email="mbl@null.net" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fonttools >= 4.0.0",
+]
+
+[project.scripts]
+fontname = "fontnamer:main"
+
+[project.urls]
+"Homepage" = "https://github.com/matthewlindsey/fontnamer/"
+"Bug Tracker" = "https://github.com/matthewlindsey/fontnamer/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
